@@ -1,0 +1,25 @@
+---
+layout: default
+tab_title: LPF | Pós Doutores
+description: Pós doutores do Laboratório de Pesquisas Fotovoltaicas.
+h1: Pós-Doutores do LPF
+---
+<section>
+  {% for people in site.pos_doutores %}
+
+    <div class="team top_rule">
+      <img src=
+             {% if people.img_path == 'none' %}
+              "/support/images/people/avatar.svg"
+             {% else %}
+              "{{ people.img_path }}"
+             {% endif %}
+           alt="{{ people.name }}">
+      <h2>{{ people.name }}</h2>
+      {{ people.content }}
+      {% assign page = people %}
+      {% include social_links.html %}
+    </div>
+
+  {% endfor %}
+</section>

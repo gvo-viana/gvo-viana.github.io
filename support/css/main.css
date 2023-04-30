@@ -1,0 +1,333 @@
+/* -- GLOBAL STYLES -------------------------------------------------------- */
+body {
+  background-color: var(--bg_color);
+  color: var(--fg_color);
+  font-family: var(--text_font_stack);
+  font-size: 1.05rem;
+  font-weight: var(--weight_regular);
+  line-height: 1.5rem;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+p {
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+h1, h2, h3 {
+  color: var(--head_color);
+  font-family: var(--head_font_stack);
+  font-weight: var(--weight_semi_bold);
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 2.28rem;
+  line-height: 2.74rem;
+}
+
+h2 {
+  font-size: 1.58rem;
+  line-height: 1.9rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  line-height: 1.32rem;
+}
+
+a {
+  color: var(--anchor_color);
+  text-decoration: none;
+}
+
+/* -- PRINCIPAL GRID STYLES ------------------------------------------------ */
+.grid {
+  align-items: start;
+  display: grid;
+  grid-template-columns: var(--grid_columns);
+  grid-template-rows: var(--grid_rows);
+  min-height: inherit;
+}
+
+/* -- HERO IMAGE STYLES ---------------------------------------------------- */
+.hero {
+  background-color: #110f17;
+  background-image: var(--hero_img_path);
+  background-position: 50% 75%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: var(--hero_height);
+}
+
+.remaining_height {
+  min-height: var(--remaining_height);
+}
+
+.remaining_height h1 {
+  text-align: center;
+}
+
+/* -- HEADER STYLES -------------------------------------------------------- */
+.header {
+  background-color: var(--bg_color);
+  border-bottom: var(--header_footer_border);
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+
+  /* turning the header into a grid */
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.header > a > img {
+  height: 2.2rem;
+  padding-left: var(--header_h_padding);
+  width: auto;
+}
+
+/* -- NAV(IGATION) MENU STYLES --------------------------------------------- */
+.nav {
+  justify-self: end;
+  padding-right: var(--header_h_padding);
+}
+
+.nav img {
+  height: 1.8rem;
+  width: auto;
+}
+
+.menu_check {
+  display: none;
+}
+
+.menu_check:checked ~ .menu_label {
+  display: none;
+}
+
+.menu_check:checked ~ .dropdown_menu {
+  display: block;
+}
+
+.menu_label{
+  position: relative;
+}
+
+/* .close_icon { */
+/*   text-align: left; */
+/* } */
+
+.dropdown_menu {
+  backdrop-filter: blur(5px);
+  background-color: var(--menu_bg_color);
+  border-radius: 1rem;
+  display: none;
+  list-style: none;
+  padding: 1rem;
+  position: absolute;
+  right: var(--header_h_padding);
+  text-align: right;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.dropdown_menu li {
+  color: var(--bg_color);
+  width: 100%;
+}
+
+.dropdown_menu li ~ li {
+  padding-top: 0.3rem;
+}
+
+.dropdown_menu a {
+  color: var(--bg_color);
+  font-family: var(--head_font_stack);
+}
+
+.dropdown_menu a:hover {
+  font-weight: var(--weight_bold);
+}
+
+/* -- FOOTER STYLES -------------------------------------------------------- */
+.footer {
+  border-top: var(--header_footer_border);
+  margin: 1rem 0;
+  padding: 1rem var(--header_h_padding) 0;
+
+  /* turning the footer into a grid */
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, auto));
+  justify-items: center;
+}
+
+.footer .lpf {
+  justify-self: start;
+}
+
+.footer .unicamp {
+  justify-self: end;
+}
+
+.footer .lpf a {
+  color: var(--fg_color);
+}
+
+.footer img {
+  height: 1.5rem;
+  vertical-align: middle;
+  width: auto;
+}
+
+/* -- COVER PAGE STYLES ---------------------------------------------------- */
+.research_themes {
+  border-left: 10px solid #cbddbb;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.research_themes span {
+  font-weight: var(--weight_semi_bold);
+}
+
+/* -- LOCATION PAGE STYLES ------------------------------------------------- */
+.location iframe {
+  height: 450px;
+  margin-top: 1.5rem;
+  width: 600px;
+}
+
+/* -- BLOG PAGE STYLES ----------------------------------------------------- */
+.blog {
+  padding: 1rem;
+  transition: background-color 0.3s;
+}
+
+.blog:hover {
+  background-color: #f4f4f4;
+}
+
+.blog a {
+  color: var(--fg_color);
+}
+
+.blog h2 {
+  color: var(--anchor_color);
+}
+
+/* -- POST PAGE STYLES ----------------------------------------------------- */
+.post .head {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+}
+
+.post .head .text {
+  text-align: right;
+}
+
+.post_glyph {
+  color: #a3be8c;
+  font-size: 3rem;
+  justify-self: center;
+}
+
+/* -- TEAM PAGE STYLES ---------------------------------------------------- */
+.team > img {
+  border-radius: 50%;
+  height: 7.5rem;
+  width: auto;
+}
+
+.team h2 {
+  display: inline-block;
+}
+
+.team span {
+  font-size: 1rem;
+}
+
+.team p:nth-child(3)::before {
+  content: 'Temas de interesse: ';
+  font-weight: var(--weight_semi_bold);
+}
+
+/* -- SOCIAL LINKS STYLES -------------------------------------------------- */
+.social_links {
+  list-style: none;
+  padding-top: 1rem;
+}
+
+.social_links li {
+  display: inline-block;
+}
+
+.social_links li ~ li {
+  padding-left: 1rem;
+}
+
+.social_links img {
+  height: 1.2rem;
+  width: auto;
+}
+
+/* -- SYSTEMS PAGE STYLES -------------------------------------------------- */
+.systems {
+  overflow: hidden;
+}
+
+.systems .head {
+  margin-bottom: 2rem;
+}
+
+.systems img {
+  border-radius: 10%;
+  float: left;
+  height: 12.5rem;
+  margin-right: 1rem;
+  width: auto;
+  /* transition: height 0.3s; */
+}
+
+.systems img:hover {
+  height: 18.5rem;
+}
+
+/* -- MEDIA QUERIES -------------------------------------------------------- */
+@media screen and (max-width: 650px) {
+  /* resizing the location map */
+  .location iframe {
+    height: 69vw;
+    width: 92vw;
+  }
+
+  p {
+    text-align: left;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+  .post .head {
+    grid-template-columns: 1fr;
+  }
+
+  .post .head .text {
+    text-align: left;
+  }
+
+  .post_glyph {
+    display: none;
+  }
+
+  .footer .message {
+    display: none;
+  }
+
+}

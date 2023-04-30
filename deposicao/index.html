@@ -1,0 +1,30 @@
+---
+layout: default
+tab_title: LPF | Deposição
+description: Sistemas de deposição do Laboratório de Pesquisas Fotovoltaicas.
+h1: Sistemas de Deposição do LPF
+---
+<section>
+  {% for sys in site.deposicao %}
+
+    <div class="systems top_rule">
+      <div class="head">
+        <h2>{{ sys.name_en }}</h2>
+        <h3>{{ sys.name_pt }}</h3>
+      </div>
+      <div class="img_text">
+        <img
+          src=
+            {% if sys.img_path == 'none' %}
+              "/support/images/systems/voltmeter.svg"
+            {% else %}
+              "{{ sys.img_path }}"
+            {% endif %}
+          alt="{{ sys.name_en }}"
+          title="{{ sys.name_en }}">
+        {{ sys.content }}
+      </div>
+    </div>
+
+  {% endfor %}
+</section>

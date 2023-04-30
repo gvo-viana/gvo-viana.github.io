@@ -1,0 +1,25 @@
+---
+layout: default
+tab_title: LPF | Doutorandos
+description: Doutorandos do Laboratório de Pesquisas Fotovoltaicas.
+h1: Doutorandos do LPF
+---
+<section>
+  {% for people in site.doutorandos %}
+
+    <div class="team top_rule">
+      <img src=
+             {% if people.img_path == 'none' %}
+              "/support/images/people/avatar.svg"
+             {% else %}
+              "{{ people.img_path }}"
+             {% endif %}
+           alt="{{ people.name }}">
+      <h2>{{ people.name }}</h2>
+      {{ people.content }}
+      {% assign page = people %}
+      {% include social_links.html %}
+    </div>
+
+  {% endfor %}
+</section>

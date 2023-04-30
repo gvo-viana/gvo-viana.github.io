@@ -1,0 +1,33 @@
+:root {
+  /* -- FONT VARIABLES ----------------------------------------------------- */
+  --weight_bold: 700;
+  --weight_regular: 300;
+  --weight_semi_bold: 500;
+  --text_font_stack: 'Fira Sans', sans-serif;
+  --head_font_stack: 'Quicksand', sans-serif;
+  /* -- COLOR VARIABLES ---------------------------------------------------- */
+  --anchor_color: #4169e1;
+  --bg_color: #fff;
+  --fg_color: #2e3440;
+  --rule_color: #d8dee9;
+  --head_color: #4c566a;
+  --header_footer_border: 1.5px solid #d8dee9;
+  --menu_bg_color: #2e3440cc;
+  /* -- HERO VARIABLES ----------------------------------------------------- */
+  --hero_img_path: url(/support/images/hero/ar_plasma.png);
+  --hero_height: 38vh;
+  --remaining_height: 62vh;
+  /* -- HEADER VARIABLES --------------------------------------------------- */
+  --header_h_padding: 2vw;
+  /* -- GRID VARIABLES ----------------------------------------------------- */
+  --num_cols: 6;
+  --max_width: 600px;
+  --grid_columns:
+    repeat(2, minmax(2vw, 1fr))
+    repeat(
+      var(--num_cols),
+      minmax(auto, calc(var(--max_width) / var(--num_cols)))
+      )
+    repeat(2, minmax(2vw, 1fr));
+  --grid_rows: auto auto 1fr auto;
+}

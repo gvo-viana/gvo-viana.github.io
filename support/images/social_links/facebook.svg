@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 312.78626 512"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="facebook.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   width="312.78625"
+   height="512"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 384 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="156.39313 : 384 : 1"
+       inkscape:persp3d-origin="78.196565 : 341.33333 : 1"
+       id="perspective2194" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.0703125"
+     inkscape:cx="-81.751825"
+     inkscape:cy="256"
+     inkscape:window-width="1366"
+     inkscape:window-height="768"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <path
+     d="M 18,21.005907 H -6 V -2.9940931 h 24 z"
+     fill="#ffffff"
+     opacity="0"
+     id="path2" />
+  <path
+     d="M 312.78624,14.385526 A 14.217556,14.217556 0 0 0 298.56868,0.16796957 H 227.4809 A 135.63549,135.63549 0 0 0 85.305338,128.12598 v 76.7748 H 14.217556 A 14.217556,14.217556 0 0 0 0,219.11834 v 73.9313 A 14.217556,14.217556 0 0 0 14.217556,307.2672 H 85.305338 V 497.78244 A 14.217556,14.217556 0 0 0 99.522894,512 h 85.305336 a 14.217556,14.217556 0 0 0 14.21755,-14.21756 V 307.2672 h 74.5 a 14.217556,14.217556 0 0 0 13.93322,-10.521 l 20.47328,-73.9313 a 14.217556,14.217556 0 0 0 -13.64886,-17.91412 h -95.25764 v -76.7748 a 28.435112,28.435112 0 0 1 28.43512,-25.5916 h 71.08778 a 14.217556,14.217556 0 0 0 14.21756,-14.21756 z"
+     fill="#231f20"
+     id="path4"
+     style="fill:#a3be8c;fill-opacity:1;stroke-width:28.4352" />
+</svg>

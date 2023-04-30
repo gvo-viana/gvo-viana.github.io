@@ -1,0 +1,17 @@
+collections_dir: site_data
+collections:
+  # equipe
+  - doutorandos
+  - ic
+  - mestrandos
+  - pos_doutores
+  - professores
+  - tecnicos
+  # infraestrutura
+  - caracterizacao
+  - deposicao
+  - outros
+  # home
+  - blog
+  - localização
+  - oportunidades

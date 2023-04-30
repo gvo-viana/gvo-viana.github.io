@@ -1,0 +1,17 @@
+.grid_cols_1_11 {
+  grid-column: 1 / 11;
+}
+
+.grid_cols_2_10 {
+  grid-column: 2 / 10;
+}
+
+.grid_cols_3_9 {
+  grid-column: 3 / 9;
+}
+
+.top_rule {
+  border-top: 1px solid var(--rule_color);
+  margin: 1.5rem 0;
+  padding-top: 1.5rem;
+}

@@ -1,0 +1,21 @@
+---
+layout: base
+---
+<div class="grid post">
+  {% include header.html %}
+  <div class="grid_cols_3_9 head">
+    <!-- <img src="/images/typewriter.svg" alt="typewriter"> -->
+    <i class="fa-solid fa-feather-pointed post_glyph"></i>
+    <div class="text">
+      <h1>{{ page.title }}</h1>
+      {% if page.subtitle != 'none' %}
+        <h2>{{ page.subtitle }}</h2>
+      {% endif %}
+      <h3>por {{ page.author }} em {{ page.date | date: '%d/%b/%Y' }}</h3>
+    </div>
+  </div>
+  <article class="article grid_cols_3_9 top_rule">
+    {{ page.content }}
+  </article>
+  {% include footer.html %}
+</div>

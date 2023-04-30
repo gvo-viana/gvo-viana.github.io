@@ -1,0 +1,30 @@
+---
+layout: default
+tab_title: LPF | Professores
+description: Professores do Laboratório de Pesquisas Fotovoltaicas.
+h1: Professores do LPF
+---
+<section>
+  {% for people in site.professores %}
+
+    <div class="team top_rule">
+      <img src=
+             {% if people.img_path == 'none' %}
+              "/support/images/people/avatar.svg"
+             {% else %}
+              "{{ people.img_path }}"
+             {% endif %}
+           alt="{{ people.name }}">
+      <h2>
+        {{ people.name }}
+        {% if people.head %}
+          <br><span>(responsável)</span>
+        {% endif %}
+      </h2>
+      {{ people.content }}
+      {% assign page = people %}
+      {% include social_links.html %}
+    </div>
+
+  {% endfor %}
+</section>

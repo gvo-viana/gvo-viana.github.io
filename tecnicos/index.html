@@ -1,0 +1,26 @@
+---
+layout: default
+tab_title: LPF | Técnicos
+description: Técnicos do Laboratório de Pesquisas Fotovoltaicas.
+h1: Técnicos do LPF
+1_glyph: <i class="fa-solid fa-people-group"></i>
+---
+<section>
+  {% for people in site.tecnicos %}
+
+    <div class="team top_rule">
+      <img src=
+             {% if people.img_path == 'none' %}
+              "/support/images/people/avatar.svg"
+             {% else %}
+              "{{ people.img_path }}"
+             {% endif %}
+           alt="{{ people.name }}">
+      <h2>{{ people.name }}</h2>
+      {{ people.content }}
+      {% assign page = people %}
+      {% include social_links.html %}
+    </div>
+
+  {% endfor %}
+</section>

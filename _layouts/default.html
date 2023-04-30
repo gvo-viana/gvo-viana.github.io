@@ -1,0 +1,11 @@
+---
+layout: base
+---
+<div class="grid">
+  {% include header.html %}
+  <h1 class="grid_cols_3_9">{{ page.h1 }}</h1>
+  <main class="main grid_cols_3_9">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+</div>
