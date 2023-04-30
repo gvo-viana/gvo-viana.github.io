@@ -294,9 +294,9 @@ a {
   /* transition: height 0.3s; */
 }
 
-.systems img:hover {
-  height: 18.5rem;
-}
+/* .systems img:hover { */
+/*   height: 18.5rem; */
+/* } */
 
 /* -- MEDIA QUERIES -------------------------------------------------------- */
 @media screen and (max-width: 650px) {
