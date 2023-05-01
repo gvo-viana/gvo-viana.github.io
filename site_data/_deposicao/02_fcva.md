@@ -1,6 +1,6 @@
 ---
 name_en: Magnetic-Filtered Cathodic Vacuum Arc
-name_pt: Arco Catódico Filtrado Magneticamente à Vàcuo
+name_pt: Arco Catódico Filtrado Magneticamente à Vácuo
 img_path: /support/images/systems/fcva_ext.png
 ---
 Sistema para deposição de filmes duros de carbono, i.e., filmes do tipo
