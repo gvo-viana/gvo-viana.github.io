@@ -249,7 +249,7 @@ a {
 }
 
 .article ul li p::before {
-  content: '\1f784\2002';
+  content: '\02219\2002';
 }
 
 /* -- TEAM PAGE STYLES ---------------------------------------------------- */
@@ -343,6 +343,11 @@ a {
 
   .footer .message {
     display: none;
+  }
+
+  .article img {
+    height: auto;
+    width: 92vw;
   }
 
 }
