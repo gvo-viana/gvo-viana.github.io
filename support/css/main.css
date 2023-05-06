@@ -318,6 +318,7 @@ a {
   /* resizing the location map */
   .location iframe {
     height: 69vw;
+    margin: 0 auto;
     width: 92vw;
   }
 
